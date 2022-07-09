@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NACFUSA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+   
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/nacfusa/logo.png" class="img-fluid rounded" alt="logo" style="width: 30px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="leadership.html" class="nav-item nav-link">Leadership</a>
+                    <a href="events.html" class="nav-item nav-link">Events</a>
+                    <a href="resources.html" class="nav-item nav-link">Resources</a>
+                    <a href="donate.html" class="nav-item nav-link">Donate</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+               
+            </div>
+        </nav>
+
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/nacfusa/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h2 class="text-white text-uppercase mb-3 animated slideInDown">NACFUSA</h2>
+                            <h6 class="text-white mb-md-4 animated zoomIn">NIFES Associate Community Fellowship (NACF) North America</h6>
+                            <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Who We Are</a>
+                            <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/nacfusa/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h2 class="text-white text-uppercase mb-3 animated slideInDown">Our Vision</h2>
+                            <h6 class="text-white mb-md-4 animated zoomIn">Inspiring one Another, Stronger Together, Serving the Lord.</h6>
+                            <a href="events.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Events</a>
+                            <a href="resources.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Resources</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-3 pt-lg-0 d-none d-lg-block d-xl-block">
+        <div class="container py-3 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Members</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">1239</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-primary mb-0">Regions</h5>
+                            <h1 class="mb-0" data-toggle="counter-up">5</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-award text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Offices</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">13</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts Start -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid   py-2 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="section-title text-center position-relative mb-3 pb-1 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+            </div>
+
+            <p class="mb-2 jumbotron text-dark">
+                NACF is the National Body for all NIFES Graduates in North America, consisting of U.S and Canada. NACF North America was inaugurated in 2012 with the influence of Bro Ebere Eze, the then NIFES Director of Associates, who visited some brethren in New Jersey that year.
+            </p>
+            <hr>
+            
+            <div class="row mb-3 justify-content-center d-flex">
+                <div class="col-md-5 p-4 m-2" style="background-color: #ff0a74;">
+                    <h6 class="fw-bold text-secondary text-uppercase text-center">Our Vision</h6>
+                        
+                    <p class="text-light" style="font-size: 1rem;
+                    font-weight: 600;">To serve as a national body to ALL NIFES graduates and local Alumni groups residing in North America (U.S and Canada), for a wider fellowship, for professional networking and for leveraging our resources to give back to NIFES Nigeria.</p>
+                    <p class="alert alert-info mt-4">Inspiring one Another; Stronger Together; Serving the Lord.</p>
+                </div>
+                
+                <div class="col-md-5 p-4 m-2" style="background: #371ba6;">
+                    <h6 class="fw-bold text-primary text-uppercase text-center">Our Core Values</h6>
+
+                        <p class="text-light" style="font-size: 1rem;
+                        font-weight: 600;">Our lifestyle and fellowship with one another is bonded by a commitment to the following core values:</p>
+
+                        <ul class="" style="color: #ffddec;">
+                            <li>Fellowship – Celebrating God and one another in an atmosphere of love and brotherhood.</li>
+                            <li>Networking – connecting with one another, to harness our collective synergy</li>
+                            <li>Love  – We share one another’s burden and extend God’s love to all.</li>
+                            <li>Faith – We challenge one another to unleash his God given potentials at all times.</li>
+                            <li>Righteousness: - Living sincerely for God anywhere, anytime and everywhere.</li>
+                        </ul>                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+    <div class=" container-fluid py-2 wow fadeInUp membership d-flex align-items-center" data-wow-delay="0.1s" >
+        <div class="container py-2">
+            <div class="section-title text-center position-relative pb-1 mb-1 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Membership</h5>
+            </div>
+            <div class="row">
+
+                <div class="col-md-2"></div>
+                <div class="col-md-8 p-2">
+                    <div class="card p-3 rounded" style="box-shadow: 0 0 30px #c1d1d7; border: 0px #fff">
+                        <h6 class="mb-0">Eligible Members of the NIFES Associate Community Fellowship, North America</h6>
+
+                        <ul class="list-styled m-2" data-aos="zoom-in">
+                            <li class="mb-2">All Graduates of higher institu
+                                tions of Nigerian Schools who attended NIFES.</li>
+                            <li class="mb-2">All organized local campus Alumni groups in the United States and Canada</li>
+                            <li class="mb-2">Interested believers from other Nigerian campus fellowships residing in the United States and Canada</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="events container-fluid py-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+
+            <h5 class="fw-bold text-primary text-uppercase">Events</h5>
+
+            
+        </div>
+        <div class="container py-3">
+            <div class="row g-5">
+                <div class="col-md-4 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/nacfusa/NACF Dallas 4.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">2014 HOUSTON CONFERENCE</a>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="mb-3">The first national conference was held in Houston in the summer of 2014.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/nacfusa/NACF New Jersey 6.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">2016 NEW JERSEY CONFERENCE</a>
+                        </div>
+                        <div class="p-4">
+                            
+                            <h4 class="mb-3">The second national conference was held in New Jersey in the summer of 2016.</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/nacfusa/NACF Dallas 3.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">2018
+
+DALLAS</a>
+                        </div>
+                        <div class="p-4">
+                            
+                            <h4 class="mb-3">The third national conference was held in Dallas in the summer of 2018</h4>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/nacfusa/NACF New Jersey 4.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">2022 NEW YORK CONFERENCE</a>
+                        </div>
+                        <div class="p-4">
+                            
+                            <h4 class="mb-3">The forth national Conference comes up in New York July 2022</h4>
+                            </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+
+
+      
+
+    <!-- Features Start -->
+    
+    <div class="membership container-fluid p-3 pt-0 wow fadeInUp" data-wow-delay="0.1s" style="background: rgb(255 10 116) !important;">
+        <div class="container py-2">
+            <div class="section-title text-center position-relative mb-3 pb-1 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-secondary text-uppercase mt-3">Coordinator's Message</h5>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-1 h-100" style="box-shadow: 0 0 30px #c1d1d7; border: 0px #fff; border-radius: 20px;"> 
+                        <div class="p-3">
+                            <i>
+                                "I welcome you to this medium of information and connection with the NACF NA activities. The Nifes Associate Community Fellowship, North America, has come a long way; from its inauguration in 2012, to its first national conference in Houston Texas in 2014. Then New Jersey in 2016, Dallas Texas in 2018 and New York in 2022. <p>The NACF fellowship meetings here in North America and the conferences evoke the aura of conferences back in the homeland when we traverse the length and breadth of our native country in search of an encounter with the God of heaven in our campus days. And because our motives were pure, desires were sincere and the hunger for God was genuine, many had encounters that set the stage for a lifelong pursuit of God as it is today. How we rejoiced in those days when we met with fellow brethren from different campuses, from North to South, from East to West, and had the privilege of knowing what God was doing with our brethren in other parts of the country in spite of real challenges in their peculiar environment.</p>
+                                <p>The effects of some of these indelible encounters and imparts from these fellowship opportunities provided by NIFES, is one of the reason why NACF North America exists, to provide a continuity of these fellowship experience, even though our campus days came to an end as should with anything that has a beginning on earth that is time bound.</p>
+
+                            </i> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="card p-1 h-100" style="box-shadow: 0 0 30px #c1d1d7; border: 0px #fff; border-radius: 20px;"> 
+                        <div class="p-3 ">
+                            <i>
+                                  <p>The NIFES Associate Community fellowship serves as the national body for all NIFES graduates residing in the U.S and Canada (North America) Every graduate of any higher institution of any Nigerian school, who identified with NIFES in his or her campus fellowship, is an automatic member of the NACF if he/she resides in the U.S. Likewise all organized campus Alumni groups in the U.S and Canada that already exist in North America are also part of the national body of NACF. The NACF provides a platform to reconnect again with one another, to be our own brother’s keeper and to support the course of NIFES Nigeria as we serve the Lord and wait for His appearing.</p>
+                                  <p> If you are a NIFES Alumni from any institution of higher learning from Nigeria and you reside in America or Canada, we invite you identify with NACF NA, and lets fellowship and network, leveraging our spiritual, professional and skillset capacities to impart our generation for God’s kingdom purpose here on earth. Send all your inquiries to <a href="mailto:nacfusa2@gmail.com" class="text-primary">nacfusa2@gmail.com</a> and you will be in the flow of this great fellowship and be blessed."
+                                    </p>
+                            </i>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-4 text-right">
+                                <p class="m-0 p-0">Shalom!</p>
+                                <p class="m-0 p-0 text-dark">Philip Okweni</p>
+                                <p class="m-0 p-0"><i>NACF Coordinator, North America</i></p>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features Start -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid wow fadeInUp p-3" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                    <h5 class="fw-bold mt-2 text-primary text-uppercase">Gallery</h5>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF Dallas 1.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF Dallas 2.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF Dallas 3.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF Dallas 4.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF Dallas 5.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF Dallas 6.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF Dallas 7.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF New Jersey 1.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF New Jersey 2.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF New Jersey 3.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF New Jersey 4.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF New Jersey 5.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF New Jersey 6.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF New Jersey 7.jpg" >
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light">
+                        <div class="d-flex align-items-center border-bottom p-2">
+                            <img class="img-fluid rounded" src="img/nacfusa/NACF New Jersey 8.jpg" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 pb-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-md-4">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="m-0 text-white">NACFUSA</h1>
+                        </a>
+                        <p class="mt-3 mb-4">Sign Up for our Newsletter</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-4 pt-3 mb-2">
+                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                        <h3 class="text-light mb-0">Quick Links</h3>
+                    </div>
+                    <div class="link-animated d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="leadership.html"><i class="bi bi-arrow-right text-primary me-2"></i>Leadership</a>
+                        <a class="text-light mb-2" href="resources.html"><i class="bi bi-arrow-right text-primary me-2"></i>Resources</a>
+                        <a class="text-light mb-2" href="donate.html"><i class="bi bi-arrow-right text-primary me-2"></i>Donate</a>
+                        <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 pt-3 mb-2">
+                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                        <h3 class="text-light mb-0">Get In Touch</h3>
+                    </div>
+                    <div class="me-3 text-light"><i class="fa fa-phone-alt me-1"></i>
+                        <a href="tel:4692374689" class="text-light">469 237 4689</a>
+                    </div>
+
+                    <div class="text-light">
+                        <i class="fa fa-envelope-open me-1"></i>
+                        <a href="mailto:nacfusa2@gmail.com" class="text-light">nacfusa2@gmail.com</a>
+                    </div>
+                    <div class="d-flex my-3 justify-content-md-left justify-content-lg-left justify-content-xs-center justify-content-sm-center">
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<script>
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+	
+	</script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
